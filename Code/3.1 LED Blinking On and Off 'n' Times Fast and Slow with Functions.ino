@@ -5,7 +5,6 @@ times with 500 ms intervals (fast), waits 2500 ms, then blinks three times with 
 repeats the pattern. This on-off cycle at different speeds runs continuously.
 
 Required Materials:
-
   Computer
   Arduino IDE
   Arduino Uno board
