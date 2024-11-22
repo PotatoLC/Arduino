@@ -1,3 +1,18 @@
+/*
+This Arduino program uses 5 LEDs connected to digital pins 13, 12, 11, 10, and 9 to represent a 4-bit binary counter (from 0 to 15).  
+The LEDs labeled `LED_1`, `LED_2`, `LED_4`, and `LED_8` represent the binary digits (1, 2, 4, and 8 respectively).  
+The LED labeled `LED_RESET` blinks after each full cycle to indicate a reset.  
+
+The program uses delays (`sleep` and `blink`) to control the timing of the binary counting and reset indicator.
+
+Required Materials:
+  - Arduino Uno board
+  - USB power cable
+  - 5 LEDs
+  - 5 resistors (330 ohms recommended)
+  - Breadboard and connecting wires
+*/
+
 const int LED_1 = 13;
 const int LED_2 = 12;
 const int LED_4 = 11;
