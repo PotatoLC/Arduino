@@ -10,18 +10,21 @@ Required Materials:
   - Breadboard and connecting wires
 */
 
-const int analogPin = A0;       
-float V2 = 0;                   
-const int sleep = 500;          
+
+const int analogPin = A0;
+float analogVal = 0;
+const int sleep = 500;
+float voltage = 0.0;
+const float VOLTAGE_ARDUINO = 5.0;
 
 void setup() {
-  pinMode(analogPin, INPUT);    
-  Serial.begin(9600);           // Start serial communication at 9600 baud
+  pinMode(analogPin, INPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
-  int analogVal = analogRead(analogPin);  // Read the analog value (0 to 1023)
-  V2 = (5. * analogVal) / 1023.;          // Convert to voltage (0V to 5V)
-  Serial.println(V2);                     // Print the voltage to the Serial Monitor
-  delay(sleep);                           // Wait before taking the next reading
+  analogVal = analogRead(analogPin);                 // Read the analog value (0 to 1023)
+  voltage = (analogVal * VOLTAGE_ARDUINO) / 1023.0;  // Convert to voltage (0V to 5V)
+  Serial.println(voltage);                           // Print the voltage to the Serial Monitor
+  delay(sleep);
 }
