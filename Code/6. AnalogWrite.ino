@@ -7,7 +7,7 @@ Required Materials:
   - Arduino Uno board
   - USB power cable
   - Yellow LED
-  - 330-ohm resistor
+  - 220-ohm resistor
   - Breadboard and connecting wires
 */
 
