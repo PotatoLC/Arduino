@@ -12,11 +12,11 @@ Required Materials:
 */
 
 String options = "Escribe el color que deseas encender \n" 
-                 "\t [1] Rojo \n" 
-                 "\t [2] Verde \n" 
-                 "\t [3] Azul \n" 
-                 "\t [4] Amarillo \n" 
-                 "\t [5] Morado \n";
+                 "\t [1] Red \n" 
+                 "\t [2] Green \n" 
+                 "\t [3] Blue \n" 
+                 "\t [4] Yellow \n" 
+                 "\t [5] Purple \n";
 
 int number = 0;
 const int SLEEP = 5000;
